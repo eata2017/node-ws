@@ -2,7 +2,7 @@ name: Build huggingface Image
 
 on:
   push:
-    branches: [ hugnew ]
+    branches: [ hugnewaa ]
     paths:
       - 'Dockerfile'
       - 'index.js'
@@ -41,7 +41,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/hugwsnew:latest
+            ghcr.io/${{ github.repository_owner }}/hugwsnewaa:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=http server
